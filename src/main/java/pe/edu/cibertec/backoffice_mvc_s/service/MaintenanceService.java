@@ -14,4 +14,6 @@ public interface MaintenanceService {
     FilmDetailDto getFilmById(int id);
 
     List<Language> getAllLanguages();
+
+    void updateFilm(FilmDetailDto filmDetailDto);
 }

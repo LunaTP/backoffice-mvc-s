@@ -45,5 +45,12 @@ public class MaintenanceController {
         return "maintenance-edit";
     }
 
+    @PostMapping("/update")
+    public String updateFilm(FilmDetailDto filmDetailDto){
+        maintenanceService.updateFilm(filmDetailDto);
+        return "redirect:/maintenance/start";
+    }
+
+
 
 }
